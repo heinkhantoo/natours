@@ -1,0 +1,61 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning node, express and mongoDB",
+  "main": "app.js",
+  "source": "./public/js/index.js",
+  "targets": {
+    "main": false,
+    "default": {
+      "distDir": "./public/js/bundle"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start:dev": "nodemon server.js",
+    "build:js": "parcel build --dist-dir bundle"
+  },
+  "author": "masterhei",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^1.7.4",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.14",
+    "pug": "^3.0.3",
+    "sharp": "^0.33.5",
+    "slugify": "^1.6.6",
+    "stripe": "^16.8.0",
+    "validator": "^13.12.0",
+    "xss-clean": "^0.1.4"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "nodemon": "^3.1.4",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "string_decoder": "^1.3.0",
+    "url": "^0.11.4",
+    "vm-browserify": "^1.1.2"
+  }
+}
